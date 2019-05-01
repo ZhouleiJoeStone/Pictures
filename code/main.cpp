@@ -474,11 +474,11 @@ int main(int argc, char *argv[])
 			//parts.write_frame("output", cnt);
 
 
-			parts.write_frame(output_dir+output_filename,cnt, std::string("time=")+std::to_string(timeSim.getwct()), VTK_WRITER | FORMAT_BINARY);
+			parts.write_frame("output",cnt, std::string("time=")+std::to_string(timeSim.getwct()), VTK_WRITER | FORMAT_BINARY);
 
-			//parts.write_frame(output_dir+output_filename,cnt, VTK_WRITER | FORMAT_BINARY);
+			//parts.write_frame("output",cnt, VTK_WRITER | FORMAT_BINARY);
 
-			//parts.write_frame(output_dir+output_filename,cnt, std::string("time=")+std::to_string(timeSim.getwct()));
+			//parts.write_frame("output",cnt, std::string("time=")+std::to_string(timeSim.getwct()));
 
 			
 		}
